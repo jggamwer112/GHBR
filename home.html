@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameHub - página inicial</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#171323">
+    <link rel="icon" type="image/png" href="icons/icon-192.png">
+</head>
+
+<body class="body">
+    <header class="header">
+        <h1 class="h1_header">💽 GameHub Brasil 💽</h1>
+    </header>
+    <section>
+        <div class="menu">
+            <button class="button" onclick="alterar_section('1')">Mídias Físicas</button>
+            <button class="button" onclick="alterar_section('2')">Mídias Digitais</button>
+            <button class="button" onclick="alterar_section('0')">Sobre</button>
+            <button class="button_carrinho"><a href="carrinho.html" class="link">🛒Meu carrinho</a></button>
+        </div>
+
+        <div id="conteudo" class="div">
+            <h2 id="title"></h2>
+            <p id="text"></p>
+
+            <div class="div_jogos">
+                <div class="btn_imagem" data-nome="Doom" data-valor="49">
+                    <img class="imagem"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSrIWulbc9dApmNOKmzRw3Usr_eSSGJylL9LBeWpBUsA&s=10">
+                    <div class="details">
+                        <p class="nome">Nome: Doom</p>
+                        <p class="preco">Preço: R$ 49,99</p>
+                        <a class="info" href="https://doomwiki.org/wiki/Doom_(Sony_PlayStation)">Saiba Mais...</a>
+                        <button class="adicionar" onclick="adicionar(this)">🛒</button>
+                    </div>
+                </div>
+
+                <div class="btn_imagem" data-nome="Super Mario World" data-valor="55">
+                    <img class="imagem"
+                        src="https://upload.wikimedia.org/wikipedia/pt/0/06/Super-Mario-World.jpg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original">
+                    <div class="details">
+                        <p class="nome">Nome: Super Mario World</p>
+                        <p class="preco">Preço: R$ 55,90</p>
+                        <a class="info" href="https://pt.wikipedia.org/wiki/Super_Mario_World">Saiba Mais...</a>
+                        <button class="adicionar" onclick="adicionar(this)">🛒</button>
+                    </div>
+                </div>
+
+                <div class="btn_imagem" data-nome="Sonic The Hedgehog" data-valor="45">
+                    <img class="imagem"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXQiE0UD-DE7MwOlY7Ws7fX3ufbKJ8_p_GpGgCYRfS_Kl3MeTJ_0EKXJqb&s=10">
+                    <div class="details">
+                        <p class="nome">Nome: Sonic The Hedgehog</p>
+                        <p class="preco">Preço: R$ 45,90</p>
+                        <a class="info" href="https://pt.wikipedia.org/wiki/Sonic_the_Hedgehog_(1991)">Saiba Mais...</a>
+                        <button class="adicionar" onclick="adicionar(this)">🛒</button>
+                    </div>
+                </div>
+
+                <div class="btn_imagem" data-nome="Top Gear 3000" data-valor="52">
+                    <img class="imagem"
+                        src="https://static.wikia.nocookie.net/topgeargame/images/8/83/Top_gear_3000_cover.jpg/revision/latest/scale-to-width-down/1200?cb=20200922004229">
+                    <div class="details">
+                        <p class="nome">Nome: Top Gear 3000</p>
+                        <p class="preco">Preço: R$ 52,99</p>
+                        <a class="info" href="https://topgear.fandom.com/wiki/Top_Gear_3000">Saiba Mais...</a>
+                        <button class="adicionar" onclick="adicionar(this)">🛒</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+<script src="pwa.js"></script>
+<script src="home.js"></script>
+
+</html>
